@@ -39,6 +39,8 @@ puppet3.forEach(pup2 => {
     })
 })
 
+
+
 const mainPup4 = document.querySelector('.mainPup4')
 const puppet4 = document.querySelectorAll('.puppet4')
 const playerCh4= document.querySelector('.playerCh4')
