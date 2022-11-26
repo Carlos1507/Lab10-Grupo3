@@ -1,5 +1,6 @@
 <!--Código por Jex-->
 $(document).ready(function (){
+
     $('#BtnContinuar').click(function (){
         let preguntas=parseInt($('#N_RQuestions').val());
         let participantes=parseInt($('#N_Participantes').val());
