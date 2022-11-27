@@ -1,6 +1,5 @@
 <!--Código por Jex-->
 $(document).ready(function (){
-
     $('#BtnContinuar').click(function (){
         let preguntas=parseInt($('#N_RQuestions').val());
         let participantes=parseInt($('#N_Participantes').val());
@@ -31,4 +30,54 @@ $(document).ready(function (){
             }
         }
     });
+
+    $('#btnPlayField').click(function (){
+        var regex = new RegExp("^[a-zA-Z ]+$");//Solo nombres y espacios
+
+        let playerCh1= $('.playerCh1').attr('src');
+        let player1= $('#player1').val();
+
+        let playerCh2= $('.playerCh2').attr('src');
+        let player2= $('#player2').val();
+
+        let playerCh3= $('.playerCh3').attr('src');
+        let player3= $('#player3').val();
+
+        let playerCh4;
+        let playerCh5;
+
+        let cumple4;let cumple5;
+        if($('#display4').is(":visible")){
+            playerCh4= $('.playerCh4').attr('src');
+            let player4= $('#player4').val();
+            cumple4= regex.test(player4);
+        }else{
+            cumple4=true;
+        }
+        if($('#display5').is(":visible")) {
+            playerCh5 = $('.playerCh5').attr('src');
+            let player5 = $('#player5').val();
+            cumple5= regex.test(player5);
+        }else{
+            cumple5=true;
+        }
+        if(regex.test(player1)&&regex.test(player2)&&regex.test(player3)&&cumple4&&cumple5){
+            document.querySelector('#perso1').src=playerCh1;
+            document.querySelector('#perso2').src=playerCh2;
+            document.querySelector('#perso3').src=playerCh3;
+            if($('#display4').is(":visible")){
+                document.querySelector('#perso4').src=playerCh4;
+                $('#linea4').show();
+            }
+            if($('#display5').is(":visible")){
+                document.querySelector('#perso5').src=playerCh5;
+                $('#linea5').show();
+            }
+            $('#SegundoModal').hide();
+            $('#TercerModal').show();
+        }else{
+            alert('Nombres mal ingresados');
+        }
+    });
+
 });

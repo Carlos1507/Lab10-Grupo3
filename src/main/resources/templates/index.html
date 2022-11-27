@@ -8,6 +8,7 @@
   <script src="/static/js/jQuery-2.1.4.min.js"></script>
   <script src='/static/js/spectrum.js'></script>
   <script src="/static/js/js1.js"></script>
+  <link rel="stylesheet" href="/static/css/css1.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel='stylesheet' href='/static/css/spectrum.css' />
   <link rel="stylesheet" href="/static/css/styles.css">
@@ -330,13 +331,122 @@
         </td>
         <td>
           <center>
-          <button type="button" class="btn btn-danger">Continuar</button></center>
+          <button id="btnPlayField" type="button" class="btn btn-danger">Campo de Juego!</button></center>
         </td>
       </tr>
     </table>
 
   </div>
-
   <script src="/static/js/main.js"></script>
+
+  <div id="TercerModal" class="container p-3 my-3 bg-dark text-white" style="width:2500px;display: none">
+    <center>
+    <table id="PlayField" width="1200px" height="450px"; border="0" cellspacing="2" cellpadding="2" bgcolor="#000000">
+
+      <tr id="linea1" class="campoJuego" align="center">
+        <td class="inicio1">
+          <img id="perso1" src="/static/img/Aerodactyl.png" class="personaje">
+        </td>
+        <td style="background-color: blue">
+        </td>
+        <td bgcolor="#ffffff">
+        </td>
+        <td ></td>
+        <td bgcolor="#ffffff" ></td>
+        <td ></td>
+        <td bgcolor="#ffffff"></td>
+        <td></td>
+        <td bgcolor="#ffffff"></td>
+        <td></td>
+        <td bgcolor="#ffffff" ></td>
+        <td></td>
+        <td bgcolor="#ffffff" ></td>
+        <td class="inicio1">
+          <img style="height: 100%!important;width: 100%!important;" src="/static/img/1647.png" class="personaje">
+        </td>
+      </tr>
+      <tr id="linea2" class="campoJuego" align="center">
+        <td class="inicio2">
+          <img id="perso2" src="/static/img/Aerodactyl.png" class="personaje">
+        </td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td class="inicio2">
+          <img style="height: 100%!important;width: 100%!important;" src="/static/img/1647.png" class="personaje">
+        </td>
+      </tr>
+      <tr id="linea3" class="campoJuego" align="center">
+        <td class="inicio3">
+          <img id="perso3" src="/static/img/Aerodactyl.png" class="personaje">
+        </td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td class="inicio3">
+          <img style="height: 100%!important;width: 100%!important;" src="/static/img/1647.png" class="personaje">
+        </td>
+      </tr>
+      <tr id="linea4" class="campoJuego" style="display: none" align="center">
+        <td class="inicio4">
+          <img id="perso4" src="/static/img/Aerodactyl.png" class="personaje">
+        </td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td class="inicio4">
+          <img style="height: 100%!important;width: 100%!important;" src="/static/img/1647.png" class="personaje">
+        </td>
+      </tr>
+      <tr id="linea5" class="campoJuego" style="display: none" align="center">
+        <td class="inicio5">
+          <img  id="perso5" src="/static/img/Aerodactyl.png" class="personaje">
+        </td>
+      <td><font color="#ffffff"></font></td>
+      <td bgcolor="#ffffff"></td>
+      <td><font color="#ffffff"></font></td>
+      <td bgcolor="#ffffff"></td>
+      <td><font color="#ffffff"></font></td>
+      <td bgcolor="#ffffff"></td>
+      <td><font color="#ffffff"></font></td>
+      <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td><font color="#ffffff"></font></td>
+        <td bgcolor="#ffffff"></td>
+        <td class="inicio5">
+          <img style="height: 100%!important;width: 100%!important;" src="/static/img/1647.png" class="personaje">
+        </td>
+    </tr>
+    </table>
+    </center>
+  </div>
 </body>
 </html>

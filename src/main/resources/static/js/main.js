@@ -39,8 +39,6 @@ puppet3.forEach(pup2 => {
     })
 })
 
-
-
 const mainPup4 = document.querySelector('.mainPup4')
 const puppet4 = document.querySelectorAll('.puppet4')
 const playerCh4= document.querySelector('.playerCh4')
@@ -80,6 +78,8 @@ $("#colores2").spectrum({
     ],
     change: function(color) {
         $('#contenedor2').css("background-color",color.toHexString());
+        $('#linea2 td').css("background-color", color.toHexString());
+        $('.inicio2').css("background-color", "rgba(33,37,41)");
     }
 });
 $("#colores1").spectrum({
@@ -91,6 +91,8 @@ $("#colores1").spectrum({
     ],
     change: function(color) {
         $('#contenedor1').css("background-color",color.toHexString());
+        $('#linea1 td').css("background-color", color.toHexString());
+        $('.inicio1').css("background-color", "rgba(33,37,41)");
     }
 });
 $("#colores3").spectrum({
@@ -102,6 +104,8 @@ $("#colores3").spectrum({
     ],
     change: function(color) {
         $('#contenedor3').css("background-color",color.toHexString());
+        $('#linea3 td').css("background-color", color.toHexString());
+        $('.inicio3').css("background-color", "rgba(33,37,41)");
     }
 });
 
@@ -114,6 +118,8 @@ $("#colores4").spectrum({
     ],
     change: function(color) {
         $('#contenedor4').css("background-color",color.toHexString());
+        $('#linea4 td').css("background-color", color.toHexString());
+        $('.inicio4').css("background-color", "rgba(33,37,41)");
     }
 });
 $("#colores5").spectrum({
@@ -125,5 +131,7 @@ $("#colores5").spectrum({
     ],
     change: function(color) {
         $('#contenedor5').css("background-color",color.toHexString());
+        $('#linea5 td').css("background-color", color.toHexString());
+        $('.inicio5').css("background-color", "rgba(33,37,41)");
     }
 });
